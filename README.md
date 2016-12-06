@@ -1,5 +1,5 @@
-## Airpub
+## itsGhost, Inc.
 
-Enjoy writing :)
+Frame Redirect Sound Cloud Script
 
-(C) 2014. Just another Airpub blog. Powered by [Airpub.io](http://airpub.io)
+(C) 2016. Powered by [itsghostyt.com](https://itsghostyt.com)

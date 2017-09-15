@@ -14,13 +14,15 @@
 <meta name=viewport content="initial-scale=1.0001,minimum-scale=1.0001,maximum-scale=1.0001,user-scalable=no">
 
 <link rel=stylesheet href=https://livecounts.net/style.css>
-<canvas id=canvas></canvas>
+<script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="//www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-64258728-1","auto")
+</script><canvas id=canvas></canvas>
 
 <div id=congratsText>
 </div><h1 id=title>Real-Time YouTube Subscriber Count</h1><h5 id=byline>by @ColleensCuber</h5>
 
 <div id=happyMarquee><b>Click on the channel name below to change channels</b>
-</div>
+</div><a id=imageLink target=_blank><img id=channelThumbnail alt="Channel thumbnail"></a>
+
 
 <div id=channelName><a id=nameLink href=javascript:void(0) onclick=W()></a>
 </div>
@@ -36,7 +38,11 @@
 <div class=odometer id=channelSubs2>
 </div>
 
-</a>
+<div id=smallText>count displayed on YouTube
+</div>
+
+<div id=messageText>
+</div></a>
 </div>
 
 <div id=menuContent>
@@ -66,12 +72,24 @@
 <hr class=menuDivider>
 
 <div class=menuItem>
+<input id=countOnYouTube type=radio name=smallCount onchange=AD() checked>
+
+<div class=menuItemText>Count displayed on YouTube
+</div>
 </div>
 
 <div class=menuItem>
+<input id=milestone type=radio name=smallCount onchange=AE()>
+
+<div class=menuItemText>Subscribers to milestone
+</div>
 </div>
 
 <div class=menuItem>
+<input id=viewCount type=radio name=smallCount onchange=AF()>
+
+<div class=menuItemText>View count
+</div>
 </div>
 <hr class=menuDivider>
 

@@ -1,5 +1,5 @@
 ## itsGhost, Inc.
 
-Frame Redirect Sound Cloud Script
+CDN files hosting
 
-(C) 2016. Powered by [itsghostyt.com](https://itsghostyt.com)
+(C) 2017. Powered by [github.com](https://github.com)

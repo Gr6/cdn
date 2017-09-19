@@ -100,9 +100,8 @@
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
-        </style>
-        <!-- Scroll Bar -->
-<style type="text/css">
+
+
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;

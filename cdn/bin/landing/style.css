@@ -1,14 +1,141 @@
-/********************************************************
-    Template Name: materialize
-    Created By: TrendyTheme
-    Envato Profile: https://themeforest.net/user/trendytheme
-    Website: http://trendytheme.net
-    Version: 1.5
-    Support: http://trendytheme.net/support
-*********************************************************/
 
+.pricing-column {
+  position: relative;
+  margin-bottom: 40px;
+}
 
+.pricing-column .inner-box {
+  position: relative;
+  margin: 20px auto 0px auto;
+  max-width: 320px;
+  padding: 0px 30px 50px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
 
+.inner-box p {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 26px;
+  color: #7f7f7f;
+  margin-bottom: 30px;
+}
+
+.pricing-column .plan-header {
+  position: relative;
+  padding: 30px 20px 25px;
+}
+
+.pricing-column .plan-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 -50px 30px -50px;
+  background-color: #03a9f4;
+  line-height: 48px;
+}
+
+.pricing-column .plan-price {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.pricing-column .plan-duration {
+  font-size: 13px;
+  color: #98a6ad;
+}
+
+.pricing-column .plan-stats {
+  position: relative;
+  padding: 30px 20px 15px;
+}
+
+.pricing-column .plan-stats li {
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
+.pricing-column .plan-stats li i {
+  font-size: 18px;
+  width: 26px;
+  vertical-align: middle;
+}
+            * { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+        </style>
+        <!-- Scroll Bar -->
+<style type="text/css">
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #000000;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #0c0c0c;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 /*
 ====================================
 [ CSS TABLE CONTENT ]

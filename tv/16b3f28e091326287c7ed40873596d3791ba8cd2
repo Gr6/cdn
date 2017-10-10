@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://vignette.wikia.nocookie.net/familyguy/images/6/64/Favicon.ico/revision/latest?cb=20110805145339" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stream - Family Guy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-full/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css"/>
+<link rel="stylesheet" href="https://ghosts.cloud/cdn/bin/tv.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link href="http://vjs.zencdn.net/6.2.4/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  
+    <!-- Custom styles for this template -->
+    <link href="https://www.iceposeidon.com/lib/jquery.json-viewer.css" rel="stylesheet">
+        <link href="../js_tube.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand pull-left" href="/">itsGhost TV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    </nav>
+    <script>
+     videojs.autoSetup();
+
+    videojs('my_video_1').ready(function(){
+      console.log(this.options()); //log all of the default videojs options
+      
+       // Store the video object
+      var myPlayer = this, id = myPlayer.id();
+      // Make up an aspect ratio
+      var aspectRatio = 264/640; 
+
+      function resizeVideoJS(){
+        var width = document.getElementById(id).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+
+      }
+      
+      // Initialize resizeVideoJS()
+      resizeVideoJS();
+      // Then on resize call resizeVideoJS()
+      window.onresize = resizeVideoJS; 
+    });
+</script>
+<script src="https://raw.githubusercontent.com/jgubman/videojs-theater-mode/master/src/videojs.theaterMode.js"></script>
+<script>
+  var player = videojs('my-video');
+
+  player.theaterMode({ elementToToggle: 'page', className: 'theater-mode' });
+
+  player.on('theaterMode', function(elm, data) {
+    if (data.theaterModeIsOn) {
+      // do something
+    } else {
+      // do something else
+    }
+  });
+</script>
+
+    <!-- Page Content -->
+   <h5><br> <br>    </h5> 
+    <center><video width="1070" id="stream_player" class="stream-player video-js vjs-default-skin" autoplay controls preload="auto" poster data-setup="{}"> 
+<source src="http://163.172.41.213:8080/dc0ede0ac966c1bf717ef13424f6dcfdd92b3196a740f7d6801f81c140609c40/hls/familyguy.m3u8" type="application/x-mpegURL">
+<p class="vjs-no-js">
+To view this video please enable JavaScript, and consider upgrading to a web browser that
+<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+</p>
+</video>
+</center>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://blackrockdigital.github.io/startbootstrap-full/vendor/jquery/jquery.min.js"></script>
+    <script src="https://blackrockdigital.github.io/startbootstrap-full/vendor/popper/popper.min.js"></script>
+    <script src="https://blackrockdigital.github.io/startbootstrap-full/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>
+<script src="/assets/javascripts/application.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.2.5/video.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.8.2/videojs-contrib-hls.js"></script> <script>
+      // Set the HLS overrideNative option globally
+      videojs.options.hls.overrideNative = true;
+      videojs.options.html5.nativeAudioTracks = false;
+      videojs.options.html5.nativeVideoTracks = false;
+      videojs('stream_player', {}, function onPlayerReady() {
+        this.volume(0.5);
+      });
+      </script>
+
+</body>
+
+</html>

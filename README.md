@@ -2,4 +2,4 @@
 
 CDN files hosting
 
-(C) 2017. Powered by [github.com](https://github.com)
+(C) 2018. Powered by [github.com](https://github.com)

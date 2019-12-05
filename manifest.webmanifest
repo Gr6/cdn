@@ -1,0 +1,26 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Netflix",
+	"scope" : "/",
+	"display" : "standalone",
+	"start_url" : "https://netflix.com/",
+	"short_name" : "Netflix",
+	"theme_color" : "black",
+	"description" : "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : "[object Object],[object Object]",
+	"prefer_related_applications" : "true",
+	"icons" : [
+		{
+			"src": "https://netflix.com/us/ffe/siteui/common/icons/nficon2016.ico",
+			"sizes": "64x64"
+		},
+		{
+			"src": "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png",
+			"sizes": "64x64"
+		}],
+	"screenshots" : [],
+	"generated" : "true"
+}
